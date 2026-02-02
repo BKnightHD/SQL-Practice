@@ -49,7 +49,7 @@ LIMIT 20;
 
 -- 4. Find the total revenue across all orders.
 
-SELECT SUM(order_total) as total_revanue
+SELECT SUM(order_total) as total_revenue
 FROM orders;
 
 -- 5. Find the average order total.
@@ -136,5 +136,6 @@ FROM orders;
 --     and confirm the query returns exactly one row.
 SELECT ROUND(AVG(order_total), 2) AS avg_order_total
 FROM orders;
+
 
 
