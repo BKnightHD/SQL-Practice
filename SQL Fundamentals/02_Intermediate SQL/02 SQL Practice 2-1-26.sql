@@ -78,7 +78,7 @@ SELECT DISTINCT customer_id
 FROM orders;
 
 -- 10. Count the number of distinct order totals.
-SELECT COUNT(DISTINCT order_totals) AS distinct_order_totals
+SELECT COUNT(DISTINCT order_total) AS distinct_order_totals
 FROM orders;
 
 -- ------------------------------------------------------------
@@ -136,6 +136,7 @@ FROM orders;
 --     and confirm the query returns exactly one row.
 SELECT ROUND(AVG(order_total), 2) AS avg_order_total
 FROM orders;
+
 
 
 
