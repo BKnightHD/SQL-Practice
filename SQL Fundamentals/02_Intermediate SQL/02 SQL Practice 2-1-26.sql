@@ -1,5 +1,5 @@
 -- Group by problem solution
-
+ 
 SELECT DISTINCT ride_type,
        ROUND(SUM(fare), 2)  AS total_trip_fare,
        ROUND(AVG(fare) , 2) AS avg_trip_fare,
@@ -136,6 +136,7 @@ FROM orders;
 --     and confirm the query returns exactly one row.
 SELECT ROUND(AVG(order_total), 2) AS avg_order_total
 FROM orders;
+
 
 
 
